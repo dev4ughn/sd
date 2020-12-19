@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -1331,28 +1331,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package3d>
 </packages3d>
 </library>
-<library name="RoboJackets-Discrete">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Discrete&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find MOSFETs and other circuit elements commonly used for switching signals between HIGH and LOW.
-&lt;/p&gt;</description>
-<packages>
-<package name="SOT-23-3">
-<smd name="3" x="0" y="1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="1" x="-0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="2" x="0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2" layer="21"/>
-<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2" layer="21"/>
-<wire x1="-1.45" y1="0.8" x2="-0.55" y2="0.8" width="0.2" layer="21"/>
-<wire x1="0.45" y1="-0.8" x2="-0.45" y2="-0.8" width="0.2" layer="21"/>
-<wire x1="0.55" y1="0.8" x2="1.45" y2="0.8" width="0.2" layer="21"/>
-<text x="-2" y="-1" size="1" layer="25" font="vector" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.016" size="1" layer="27" font="vector" rot="R90">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="RoboJackets-Connectors">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -1370,30 +1348,6 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="9" y1="-4.5" x2="-7.7" y2="-4.5" width="0.127" layer="21"/>
 <text x="-7" y="5" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-7" y="-5" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
-</package>
-<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" locally_modified="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" shape="square" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.016" rot="R90"/>
-<text x="-2.5162" y="2.0288" size="1" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-2.005" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
 <package name="UX60-MB-5S8">
 <description>&lt;b&gt;MINI USB Connector HI-SPEED Certified&lt;/b&gt; Metal Shield Dip Type With Positioning Post&lt;p&gt;
@@ -1496,14 +1450,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <text x="1" y="-5" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="1X02" urn="urn:adsk.eagle:package:22435/2" type="model">
-<description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="1X02"/>
-</packageinstances>
-</package3d>
-</packages3d>
 </library>
 <library name="RoboJackets-Aesthetics">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
@@ -4963,10 +4909,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="IC1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="SO08" package3d_urn="urn:adsk.eagle:package:6240673/1" override_package3d_urn="urn:adsk.eagle:package:25000912/2" override_package_urn="urn:adsk.eagle:footprint:6240027/1" value="LM555D" x="17.221" y="17.624" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.616" y="21.773" size="1.27" layer="25" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="Q2" library="RoboJackets-Discrete" package="SOT-23-3" override_package3d_urn="urn:adsk.eagle:package:25000917/2" override_package_urn="urn:adsk.eagle:footprint:25000918/1" value="BSS806N" x="8.37" y="19.36" smashed="yes" rot="R90">
-<attribute name="DKPN" value="BSS806NH6327XTSA1CT-ND" x="31.23" y="46.03" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="9.37" y="17.36" size="1" layer="25" font="vector" rot="R180"/>
-</element>
 <element name="TM1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="TRIM-3386" package3d_urn="urn:adsk.eagle:package:6240934/1" value="" x="20.36" y="6.19" smashed="yes">
 <attribute name="NAME" x="15.28" y="4.115" size="1.27" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="26.71" y="4.285" size="1.27" layer="27" rot="R90"/>
@@ -4975,11 +4917,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="DKPN" value="CP-037A-ND" x="4.562" y="4.54" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="9.782" y="9.34" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="-2.438" y="-0.46" size="1" layer="27" font="vector" align="top-left"/>
-</element>
-<element name="JP1" library="RoboJackets-Connectors" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="8.77" y="13.19" smashed="yes" rot="R90">
-<attribute name="NAME" x="11.1812" y="11.8438" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="POPULARITY" value="98" x="8.77" y="13.19" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="10.775" y="10.65" size="1" layer="27" font="vector" rot="R90" align="top-left"/>
 </element>
 <element name="U$2" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.4X" value="" x="39.25" y="2.36" smashed="yes"/>
 <element name="J1" library="RoboJackets-Connectors" package="UX60-MB-5S8" override_package3d_urn="urn:adsk.eagle:package:25000186/2" override_package_urn="urn:adsk.eagle:footprint:25000187/1" value="UX60-MB-5S8" x="-1.18" y="34.78" smashed="yes">
@@ -5000,12 +4937,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="IC1" pad="1"/>
 <contactref element="C2" pad="2"/>
 <contactref element="C1" pad="2"/>
-<contactref element="Q2" pad="2"/>
 <contactref element="J2" pad="P$1"/>
 <contactref element="C3" pad="2"/>
-<wire x1="9.57" y1="20.31" x2="9.57" y2="21.17" width="0.4" layer="1"/>
-<wire x1="9.57" y1="21.17" x2="9.11" y2="21.63" width="0.4" layer="1"/>
-<via x="9.11" y="21.63" extent="1-16" drill="0.35"/>
 <wire x1="11.5" y1="23.43" x2="10.85" y2="24.08" width="0.2" layer="1"/>
 <wire x1="10.85" y1="24.08" x2="10.06" y2="24.08" width="0.2" layer="1"/>
 <via x="10.06" y="24.08" extent="1-16" drill="0.35"/>
@@ -5032,13 +4965,18 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="14.105" y1="13.783" x2="15.877" y2="13.783" width="0.2" layer="1"/>
 <wire x1="15.877" y1="13.783" x2="16.17" y2="13.49" width="0.2" layer="1"/>
 <via x="16.17" y="13.49" extent="1-16" drill="0.35"/>
+<wire x1="10.06" y1="24.08" x2="9.58" y2="32.46" width="0" layer="19" extent="1-1"/>
+<wire x1="13.11" y1="24.29" x2="11.5" y2="23.43" width="0" layer="19" extent="1-1"/>
+<wire x1="20.2944" y1="15.719" x2="14.546" y2="23.495" width="0" layer="19" extent="1-1"/>
+<wire x1="16.17" y1="13.49" x2="20.2944" y2="15.719" width="0" layer="19" extent="1-1"/>
+<wire x1="14.105" y1="11.66" x2="14.105" y2="13.783" width="0" layer="19" extent="1-1"/>
+<wire x1="4.562" y1="4.54" x2="13.54" y2="9.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+9V">
 <contactref element="IC1" pad="4"/>
 <contactref element="TM1" pad="1"/>
 <contactref element="IC1" pad="8"/>
 <contactref element="C2" pad="1"/>
-<contactref element="JP1" pad="1"/>
 <wire x1="14.1476" y1="15.719" x2="14.17" y2="15.6966" width="0.2" layer="1"/>
 <wire x1="20.2944" y1="19.529" x2="21.491" y2="19.529" width="0.2" layer="1"/>
 <wire x1="21.491" y1="19.529" x2="22.21" y2="18.81" width="0.2" layer="1"/>
@@ -5053,15 +4991,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="6.44" y1="18.58" x2="5.45" y2="19.57" width="0.4" layer="1"/>
 <wire x1="4.8" y1="19.57" x2="5.45" y2="19.57" width="0.4" layer="1"/>
 <wire x1="6.44" y1="18.58" x2="6.44" y2="13.99" width="0.4" layer="1"/>
-<wire x1="8.77" y1="11.92" x2="8.51" y2="11.92" width="0.4" layer="1"/>
 <wire x1="8.51" y1="11.92" x2="6.44" y2="13.99" width="0.4" layer="1"/>
 <wire x1="14.1476" y1="15.719" x2="12.405" y2="13.9764" width="0.2" layer="1"/>
 <wire x1="12.405" y1="13.9764" x2="12.405" y2="13.783" width="0.4" layer="1"/>
 <wire x1="12.405" y1="13.783" x2="12.405" y2="11.66" width="0.2" layer="1"/>
-<wire x1="8.77" y1="11.92" x2="12.145" y2="11.92" width="0.4" layer="1"/>
 <wire x1="12.145" y1="11.92" x2="12.405" y2="11.66" width="0.4" layer="1"/>
 <wire x1="17.82" y1="3.3325" x2="12.405" y2="8.7475" width="0.2" layer="1"/>
 <wire x1="12.405" y1="8.7475" x2="12.405" y2="11.66" width="0.2" layer="1"/>
+<wire x1="12.145" y1="11.92" x2="8.51" y2="11.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="THR">
 <contactref element="IC1" pad="6"/>
@@ -5082,7 +5019,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="T_OUT">
 <contactref element="IC1" pad="3"/>
-<contactref element="Q2" pad="1"/>
 <wire x1="20.2944" y1="18.259" x2="18.601" y2="18.259" width="0.2" layer="1"/>
 <wire x1="18.601" y1="18.259" x2="18.6" y2="18.26" width="0.2" layer="1"/>
 <via x="18.6" y="18.26" extent="1-16" drill="0.35"/>
@@ -5090,7 +5026,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="11.94" y1="18.26" x2="11.88" y2="18.2" width="0.2" layer="16"/>
 <via x="11.88" y="18.2" extent="1-16" drill="0.35"/>
 <wire x1="11.88" y1="18.2" x2="9.78" y2="18.2" width="0.2" layer="1"/>
-<wire x1="9.78" y1="18.2" x2="9.57" y2="18.41" width="0.2" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC1" pad="7"/>
@@ -5105,12 +5040,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C3" pad="1"/>
 <wire x1="14.1476" y1="19.529" x2="14.1476" y2="21.3966" width="0.2" layer="1"/>
 <wire x1="14.1476" y1="21.3966" x2="14.546" y2="21.795" width="0.2" layer="1"/>
-</signal>
-<signal name="N$2">
-<contactref element="JP1" pad="2"/>
-<contactref element="Q2" pad="3"/>
-<wire x1="7.17" y1="19.36" x2="8.77" y2="17.76" width="0.4" layer="1"/>
-<wire x1="8.77" y1="17.76" x2="8.77" y2="14.46" width="0.4" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="J1" pad="1"/>
