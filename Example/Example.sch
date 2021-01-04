@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8598,6 +8598,8 @@ of audio range. </text>
 <wire x1="228.6" y1="127" x2="228.6" y2="195.58" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="228.6" y1="195.58" x2="144.78" y2="195.58" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="144.78" y1="195.58" x2="144.78" y2="127" width="0.1524" layer="97" style="shortdash"/>
+<text x="124.46" y="114.3" size="1.778" layer="97">SR latch</text>
+<text x="172.72" y="114.3" size="1.778" layer="97">Decade Counter</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="48.26" y="78.74" smashed="yes">
