@@ -12755,6 +12755,245 @@ Based on the following sources:
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-IC-Logic" urn="urn:adsk.eagle:library:523">
+<description>&lt;h3&gt;SparkFun Logic ICs&lt;/h3&gt;
+This library contains parts which fit into the standard logic IC families.&lt;br&gt;&lt;br&gt;
+This library is special as the devices are most generalized, with manufacturer specific variants stemming from the generalized numbers.  It also uses individual gates for common parts with a power consort.  Place the gates in a schematic such that they are easy to see in the circuit, and apply power to the power symbol for multigate packages. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="DIP16" urn="urn:adsk.eagle:footprint:38791/1" library_version="1">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="10.16" y1="2.54" x2="-10.16" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-2.54" x2="10.16" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="2.54" x2="-10.16" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-1.016" x2="-10.16" y2="1.016" width="0.2032" layer="21" curve="180"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="9" x="8.89" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="10" x="6.35" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="11" x="3.81" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="12" x="1.27" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<text x="-10.795" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="11.43" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+<polygon width="0.127" layer="21">
+<vertex x="-11.27125" y="-3.175" curve="-90"/>
+<vertex x="-10.795" y="-2.69875" curve="-90"/>
+<vertex x="-10.31875" y="-3.175" curve="-90"/>
+<vertex x="-10.795" y="-3.65125" curve="-90"/>
+</polygon>
+</package>
+<package name="DIP16-KIT" urn="urn:adsk.eagle:footprint:38801/1" library_version="1">
+<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-1.016" x2="-10.16" y2="1.016" width="0.2032" layer="21" curve="180"/>
+<wire x1="-10.16" y1="2.921" x2="10.16" y2="2.921" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.2032" layer="21"/>
+<pad name="1" x="-8.89" y="-4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="2" x="-6.35" y="-4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="3" x="-3.81" y="-4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="4" x="-1.27" y="-4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="5" x="1.27" y="-4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="6" x="3.81" y="-4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="7" x="6.35" y="-4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="8" x="8.89" y="-4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="9" x="8.89" y="4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="10" x="6.35" y="4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="11" x="3.81" y="4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="12" x="1.27" y="4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="13" x="-1.27" y="4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="14" x="-3.81" y="4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="15" x="-6.35" y="4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<pad name="16" x="-8.89" y="4.191" drill="0.8636" diameter="1.905" rot="R90" stop="no"/>
+<circle x="-3.81" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-3.81" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-1.27" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="1.27" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="3.81" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="6.35" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="8.89" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="8.89" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-6.35" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-3.81" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-1.27" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="1.27" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="3.81" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="6.35" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-8.89" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-1.27" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="1.27" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="3.81" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="6.35" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="8.89" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="8.89" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="3.81" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="6.35" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="1.27" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-1.27" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-3.81" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-6.35" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-8.89" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-6.35" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-8.89" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-3.81" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-3.81" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-6.35" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-8.89" y="4.191" radius="0.4318" width="0" layer="29"/>
+<text x="-10.795" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="11.43" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+<polygon width="0.127" layer="21">
+<vertex x="-11.27125" y="-3.4925" curve="-90"/>
+<vertex x="-10.795" y="-3.01625" curve="-90"/>
+<vertex x="-10.31875" y="-3.4925" curve="-90"/>
+<vertex x="-10.795" y="-3.96875" curve="-90"/>
+</polygon>
+</package>
+</packages>
+<packages3d>
+<package3d name="DIP16" urn="urn:adsk.eagle:package:38809/1" type="box" library_version="1">
+<description>Dual In Line Package</description>
+<packageinstances>
+<packageinstance name="DIP16"/>
+</packageinstances>
+</package3d>
+<package3d name="DIP16-KIT" urn="urn:adsk.eagle:package:38816/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="DIP16-KIT"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="CD4017" urn="urn:adsk.eagle:symbol:38800/1" library_version="1">
+<wire x1="-7.62" y1="-17.78" x2="7.62" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-17.78" width="0.4064" layer="94"/>
+<pin name="Q5" x="10.16" y="0" length="short" direction="out" rot="R180"/>
+<pin name="Q1" x="10.16" y="10.16" length="short" direction="out" rot="R180"/>
+<pin name="Q0" x="10.16" y="12.7" length="short" direction="out" rot="R180"/>
+<pin name="Q2" x="10.16" y="7.62" length="short" direction="out" rot="R180"/>
+<pin name="Q6" x="10.16" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="Q7" x="10.16" y="-5.08" length="short" direction="out" rot="R180"/>
+<pin name="Q3" x="10.16" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="Q8" x="10.16" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="Q4" x="10.16" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="Q9" x="10.16" y="-10.16" length="short" direction="out" rot="R180"/>
+<pin name="CO" x="10.16" y="-15.24" length="short" direction="out" rot="R180"/>
+<pin name="ENA" x="-10.16" y="-10.16" length="short" direction="in" function="dot"/>
+<pin name="CLK" x="-10.16" y="0" length="short" direction="in" function="clk"/>
+<pin name="RES" x="-10.16" y="-15.24" length="short" direction="in"/>
+<text x="-7.62" y="16.002" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="95" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="POWER_CONSORT" urn="urn:adsk.eagle:symbol:38781/1" library_version="1">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="P$V+" x="0" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="P$V-" x="0" y="-7.62" visible="pad" length="short" rot="R90"/>
+<text x="-3.302" y="-5.08" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-5.08" size="1.778" layer="95" font="vector" rot="R90">&gt;VALUE</text>
+<text x="0.127" y="-4.699" size="1.27" layer="94" font="vector" align="bottom-center">VEE</text>
+<text x="0.127" y="3.429" size="1.27" layer="94" font="vector" align="bottom-center">VCC</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CD4017" urn="urn:adsk.eagle:component:38830/1" prefix="U" uservalue="yes" library_version="1">
+<description>&lt;h3&gt;10-Out Decade Counter&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Kits/cd4022b.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12707"&gt;SparkFun SparkPunk Sequencer Kit&lt;/a&gt; (KIT-12707)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G1" symbol="CD4017" x="0" y="0"/>
+<gate name="G2" symbol="POWER_CONSORT" x="25.4" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP16">
+<connects>
+<connect gate="G1" pin="CLK" pad="14"/>
+<connect gate="G1" pin="CO" pad="12"/>
+<connect gate="G1" pin="ENA" pad="13"/>
+<connect gate="G1" pin="Q0" pad="3"/>
+<connect gate="G1" pin="Q1" pad="2"/>
+<connect gate="G1" pin="Q2" pad="4"/>
+<connect gate="G1" pin="Q3" pad="7"/>
+<connect gate="G1" pin="Q4" pad="10"/>
+<connect gate="G1" pin="Q5" pad="1"/>
+<connect gate="G1" pin="Q6" pad="5"/>
+<connect gate="G1" pin="Q7" pad="6"/>
+<connect gate="G1" pin="Q8" pad="9"/>
+<connect gate="G1" pin="Q9" pad="11"/>
+<connect gate="G1" pin="RES" pad="15"/>
+<connect gate="G2" pin="P$V+" pad="16"/>
+<connect gate="G2" pin="P$V-" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38809/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11929" constant="no"/>
+<attribute name="VALUE" value="CD4017" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="KIT" package="DIP16-KIT">
+<connects>
+<connect gate="G1" pin="CLK" pad="14"/>
+<connect gate="G1" pin="CO" pad="12"/>
+<connect gate="G1" pin="ENA" pad="13"/>
+<connect gate="G1" pin="Q0" pad="3"/>
+<connect gate="G1" pin="Q1" pad="2"/>
+<connect gate="G1" pin="Q2" pad="4"/>
+<connect gate="G1" pin="Q3" pad="7"/>
+<connect gate="G1" pin="Q4" pad="10"/>
+<connect gate="G1" pin="Q5" pad="1"/>
+<connect gate="G1" pin="Q6" pad="5"/>
+<connect gate="G1" pin="Q7" pad="6"/>
+<connect gate="G1" pin="Q8" pad="9"/>
+<connect gate="G1" pin="Q9" pad="11"/>
+<connect gate="G1" pin="RES" pad="15"/>
+<connect gate="G2" pin="P$V+" pad="16"/>
+<connect gate="G2" pin="P$V-" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38816/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11929" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="REVISION" value="1.0"/>
@@ -12809,6 +13048,7 @@ Based on the following sources:
 <part name="SUPPLY13" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="U$3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="CR1220" device="SMT" package3d_urn="urn:adsk.eagle:package:6240665/1"/>
 <part name="SUPPLY14" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="U1" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" deviceset="CD4017" device="" package3d_urn="urn:adsk.eagle:package:38809/1" value="CD4017"/>
 </parts>
 <sheets>
 <sheet>
@@ -12973,6 +13213,14 @@ of audio range. </text>
 <instance part="IC2" gate="B" x="228.6" y="76.2" smashed="yes">
 <attribute name="NAME" x="220.98" y="81.915" size="1.778" layer="95"/>
 <attribute name="VALUE" x="220.98" y="68.58" size="1.778" layer="96"/>
+</instance>
+<instance part="U1" gate="G1" x="175.26" y="170.18" smashed="yes">
+<attribute name="NAME" x="167.64" y="186.182" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="167.64" y="149.86" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="U1" gate="G2" x="205.74" y="167.64" smashed="yes">
+<attribute name="NAME" x="202.438" y="162.56" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="210.82" y="162.56" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 </instances>
 <busses>
