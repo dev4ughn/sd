@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5176,6 +5176,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="IC2" library="74xx-us" library_urn="urn:adsk.eagle:library:88" package="SO14" package3d_urn="urn:adsk.eagle:package:2917/1" value="74LS02D" x="-9.7" y="-9.5" smashed="yes">
 <attribute name="NAME" x="-14.399" y="-11.278" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="0" x="-9.7" y="-9.5" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="J" x="-9.7" y="-9.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-13.256" y="-10.008" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="S1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="B3F-40XX-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1" value="" x="-23.76" y="-7.03" smashed="yes">
@@ -5411,6 +5412,15 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="D3" pad="C"/>
 <contactref element="R3" pad="2"/>
 <wire x1="-27.625" y1="-43.86" x2="-28.93" y2="-70.74" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="IC2" pad="5"/>
+</signal>
+<signal name="N$8">
+<contactref element="IC2" pad="4"/>
+</signal>
+<signal name="N$9">
+<contactref element="IC2" pad="6"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

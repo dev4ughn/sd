@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12792,7 +12792,9 @@ Based on the following sources:
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
 <part name="SUPPLY12" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SW1" library="Example" deviceset="MFS101D-6-Z" device="" override_package3d_urn="urn:adsk.eagle:package:25000897/2" override_package_urn="urn:adsk.eagle:footprint:25000899/1"/>
-<part name="IC2" library="74xx-us" library_urn="urn:adsk.eagle:library:88" deviceset="74*02" device="D" package3d_urn="urn:adsk.eagle:package:2917/1" technology="LS"/>
+<part name="IC2" library="74xx-us" library_urn="urn:adsk.eagle:library:88" deviceset="74*02" device="D" package3d_urn="urn:adsk.eagle:package:2917/1" technology="LS">
+<attribute name="SPICEPREFIX" value="J"/>
+</part>
 <part name="S1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="40-XX" device="-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1"/>
 <part name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="CR1220" device="SMT" package3d_urn="urn:adsk.eagle:package:6240665/1"/>
 <part name="IC3" library="74xx-us" library_urn="urn:adsk.eagle:library:88" deviceset="74*02" device="D" package3d_urn="urn:adsk.eagle:package:2917/1" technology="LS"/>
@@ -12912,9 +12914,9 @@ of audio range. </text>
 <attribute name="NAME" x="114.3" y="154.94" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="107.696" y="154.178" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IC2" gate="A" x="195.58" y="88.9" smashed="yes">
-<attribute name="NAME" x="187.96" y="94.615" size="1.778" layer="95"/>
-<attribute name="VALUE" x="187.96" y="81.28" size="1.778" layer="96"/>
+<instance part="IC2" gate="A" x="198.12" y="88.9" smashed="yes">
+<attribute name="NAME" x="190.5" y="94.615" size="1.778" layer="95"/>
+<attribute name="VALUE" x="190.5" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="S1" gate="1" x="127" y="88.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="124.46" y="95.25" size="1.778" layer="95"/>
@@ -12967,6 +12969,10 @@ of audio range. </text>
 </instance>
 <instance part="SUPPLY14" gate="G$1" x="144.78" y="93.98" smashed="yes">
 <attribute name="VALUE" x="142.24" y="91.44" size="1.778" layer="96"/>
+</instance>
+<instance part="IC2" gate="B" x="228.6" y="76.2" smashed="yes">
+<attribute name="NAME" x="220.98" y="81.915" size="1.778" layer="95"/>
+<attribute name="VALUE" x="220.98" y="68.58" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -13134,7 +13140,7 @@ of audio range. </text>
 <segment>
 <pinref part="IC2" gate="A" pin="I1"/>
 <label x="177.8" y="86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="182.88" y1="86.36" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="86.36" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="A" pin="O"/>
@@ -13146,7 +13152,7 @@ of audio range. </text>
 <segment>
 <pinref part="IC2" gate="A" pin="I0"/>
 <label x="177.8" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="182.88" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="S1"/>
@@ -13166,7 +13172,7 @@ of audio range. </text>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="O"/>
-<wire x1="208.28" y1="88.9" x2="213.36" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="88.9" x2="213.36" y2="88.9" width="0.1524" layer="91"/>
 <label x="213.36" y="88.9" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
@@ -13222,6 +13228,27 @@ of audio range. </text>
 <pinref part="D3" gate="A" pin="C"/>
 <wire x1="248.92" y1="86.36" x2="254" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="IC2" gate="B" pin="I0"/>
+<wire x1="215.9" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
+<label x="208.28" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="IC2" gate="B" pin="O"/>
+<wire x1="241.3" y1="76.2" x2="246.38" y2="76.2" width="0.1524" layer="91"/>
+<label x="246.38" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="IC2" gate="B" pin="I1"/>
+<wire x1="215.9" y1="73.66" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
+<label x="208.28" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
