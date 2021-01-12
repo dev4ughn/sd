@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -190,12 +190,10 @@
 <wire x1="86" y1="0" x2="86" y2="54" width="0" layer="20"/>
 <wire x1="86" y1="54" x2="0" y2="54" width="0" layer="20"/>
 <wire x1="0" y1="54" x2="0" y2="0" width="0" layer="20"/>
-<text x="30.58" y="2.23" size="1.778" layer="21" font="vector" rot="R90">RoboJackets PCB Contest
-555 Timer PWM Motor Driver</text>
+<text x="82.89" y="5.71" size="1.778" layer="21" font="vector" rot="R180">RoboJackets PCB Contest
+Decade Counter with SR latch</text>
 <dimension x1="0" y1="54" x2="0" y2="0" x3="-13.1" y3="27" textsize="1.778" layer="51" dtype="vertical"/>
 <dimension x1="0" y1="54" x2="86" y2="54" x3="43" y3="63.84" textsize="1.778" layer="51" dtype="horizontal"/>
-<text x="1.34" y="26.16" size="1.778" layer="21">5V</text>
-<text x="1.61" y="10.97" size="1.778" layer="21">9V</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -4978,25 +4976,20 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </pass>
 </autorouter>
 <elements>
-<element name="U$2" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.4X" value="" x="39.25" y="2.36" smashed="yes"/>
-<element name="IC2" library="74xx-us" library_urn="urn:adsk.eagle:library:88" package="SO14" package3d_urn="urn:adsk.eagle:package:2917/1" value="74LS02D" x="-9.7" y="-9.5" smashed="yes">
-<attribute name="NAME" x="-14.399" y="-11.278" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="-9.7" y="-9.5" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="J" x="-9.7" y="-9.5" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-13.256" y="-10.008" size="1.27" layer="27" ratio="10"/>
+<element name="U$2" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.4X" value="" x="69.9" y="20.1" smashed="yes"/>
+<element name="IC2" library="74xx-us" library_urn="urn:adsk.eagle:library:88" package="SO14" package3d_urn="urn:adsk.eagle:package:2917/1" value="74LS02D" x="9.34" y="-9.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.118" y="-14.199" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="0" x="9.34" y="-9.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="J" x="9.34" y="-9.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="9.848" y="-13.056" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="S1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="B3F-40XX-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1" value="" x="-23.76" y="-7.03" smashed="yes">
 <attribute name="NAME" x="-28.84" y="-0.045" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="-26.935" y="-12.11" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="-21.37" y="-21.61" smashed="yes">
-<attribute name="NAME" x="-24.926" y="-16.008" size="1.6764" layer="25" font="vector"/>
-<attribute name="VALUE" x="-25.688" y="-26.16" size="1.6764" layer="27" font="vector"/>
-</element>
-<element name="IC3" library="74xx-us" library_urn="urn:adsk.eagle:library:88" package="SO14" package3d_urn="urn:adsk.eagle:package:2917/1" value="74LS02D" x="-10.37" y="-33.07" smashed="yes">
-<attribute name="NAME" x="-15.069" y="-34.848" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="-10.37" y="-33.07" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-13.926" y="-33.578" size="1.27" layer="27" ratio="10"/>
+<element name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="-4.61" y="-33.58" smashed="yes">
+<attribute name="NAME" x="-8.166" y="-27.978" size="1.6764" layer="25" font="vector"/>
+<attribute name="VALUE" x="-8.928" y="-38.13" size="1.6764" layer="27" font="vector"/>
 </element>
 <element name="D2" library="RoboJackets-LEDs" package="LED0603" value="YELLOW" x="-28.4" y="-39.58" smashed="yes">
 <attribute name="DKPN" value="160-1448-1-ND" x="-28.4" y="-39.58" size="1.778" layer="27" display="off"/>
@@ -5014,9 +5007,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="-29.78" y="-48.41" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-30.415" y="-50.315" size="1.27" layer="27"/>
 </element>
-<element name="S2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="B3F-40XX-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1" value="" x="-23.76" y="-58.24" smashed="yes">
-<attribute name="NAME" x="-28.84" y="-51.255" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="-26.935" y="-63.32" size="1.27" layer="27" ratio="10"/>
+<element name="S2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="B3F-40XX-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1" value="" x="28.29" y="-30.29" smashed="yes">
+<attribute name="NAME" x="23.21" y="-23.305" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="25.115" y="-35.37" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="" x="-29.78" y="-67.26" smashed="yes">
 <attribute name="NAME" x="-30.415" y="-66.625" size="1.27" layer="25"/>
@@ -5030,14 +5023,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="-29.78" y="-70.74" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-30.415" y="-72.645" size="1.27" layer="27"/>
 </element>
-<element name="U$3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="-21.37" y="-79.78" smashed="yes">
-<attribute name="NAME" x="-24.926" y="-74.178" size="1.6764" layer="25" font="vector"/>
-<attribute name="VALUE" x="-25.688" y="-84.33" size="1.6764" layer="27" font="vector"/>
+<element name="U$3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="42.64" y="-63.79" smashed="yes">
+<attribute name="NAME" x="39.084" y="-58.188" size="1.6764" layer="25" font="vector"/>
+<attribute name="VALUE" x="38.322" y="-68.34" size="1.6764" layer="27" font="vector"/>
 </element>
-<element name="U1" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" package="DIP16" package3d_urn="urn:adsk.eagle:package:38809/1" value="CD4017" x="-19.57" y="-91.13" smashed="yes">
-<attribute name="NAME" x="-30.365" y="-91.13" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="IC-11929" x="-19.57" y="-91.13" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-8.14" y="-91.13" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<element name="U1" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" package="DIP16" package3d_urn="urn:adsk.eagle:package:38809/1" value="CD4017" x="0.08" y="-80.05" smashed="yes">
+<attribute name="NAME" x="-10.715" y="-80.05" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="IC-11929" x="0.08" y="-80.05" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="11.51" y="-80.05" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
 <element name="D1" library="RoboJackets-LEDs" package="LED0603" value="YELLOW" x="-28.41" y="-97.95" smashed="yes">
 <attribute name="DKPN" value="160-1448-1-ND" x="-28.4" y="-97.95" size="1.778" layer="27" display="off"/>
@@ -5122,14 +5115,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </elements>
 <signals>
 <signal name="GND">
-<polygon width="0.4" layer="16" thermals="no">
-<vertex x="0" y="0"/>
-<vertex x="0" y="40"/>
-<vertex x="25" y="40"/>
-<vertex x="25" y="0"/>
-</polygon>
 <contactref element="IC2" pad="7"/>
-<contactref element="IC3" pad="7"/>
 <contactref element="R1" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="R3" pad="1"/>
@@ -5145,18 +5131,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-30.63" y1="-166.15" x2="-21.37" y2="-176.58" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.63" y1="-145.9" x2="-30.63" y2="-166.15" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.63" y1="-141.02" x2="-30.63" y2="-145.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.84" y1="-87.32" x2="-30.63" y2="-141.02" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.37" y1="-79.78" x2="-20.84" y2="-87.32" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.63" y1="-70.74" x2="-21.37" y2="-79.78" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.63" y1="-70.74" x2="-30.63" y2="-141.02" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.63" y1="-67.26" x2="-30.63" y2="-70.74" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.63" y1="-48.41" x2="-30.63" y2="-67.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.56" y1="-36.1434" x2="-30.63" y2="-48.41" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.37" y1="-21.61" x2="-6.56" y2="-36.1434" width="0" layer="19" extent="1-1"/>
-<wire x1="-5.89" y1="-12.5734" x2="-21.37" y2="-21.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.19" y1="-76.24" x2="-30.63" y2="-70.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.61" y1="-33.58" x2="-30.63" y2="-48.41" width="0" layer="19" extent="1-1"/>
+<wire x1="12.4134" y1="-5.69" x2="-4.61" y2="-33.58" width="0" layer="19" extent="1-1"/>
+<wire x1="42.64" y1="-63.79" x2="-1.19" y2="-76.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC2" pad="14"/>
-<contactref element="IC3" pad="14"/>
 <contactref element="S1" pad="3"/>
 <contactref element="S2" pad="3"/>
 <contactref element="U$1" pad="+$1"/>
@@ -5164,36 +5148,35 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="U$4" pad="+$1"/>
 <contactref element="U$5" pad="+$1"/>
 <wire x1="-29.57" y1="-176.58" x2="-29.57" y2="-191.32" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.57" y1="-79.78" x2="-29.57" y2="-176.58" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.0084" y1="-60.7292" x2="-29.57" y2="-79.78" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.18" y1="-29.9966" x2="-30.0084" y2="-60.7292" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.57" y1="-21.61" x2="-14.18" y2="-29.9966" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.0084" y1="-9.5192" x2="-29.57" y2="-21.61" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.51" y1="-6.4266" x2="-30.0084" y2="-9.5192" width="0" layer="19" extent="1-1"/>
+<wire x1="34.44" y1="-63.79" x2="-29.57" y2="-176.58" width="0" layer="19" extent="1-1"/>
+<wire x1="22.0416" y1="-32.7792" x2="34.44" y2="-63.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.81" y1="-33.58" x2="22.0416" y2="-32.7792" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.0084" y1="-9.5192" x2="-12.81" y2="-33.58" width="0" layer="19" extent="1-1"/>
+<wire x1="6.2666" y1="-13.31" x2="-30.0084" y2="-9.5192" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="QNOT">
 <contactref element="IC2" pad="3"/>
-<contactref element="IC3" pad="1"/>
-<wire x1="-10.97" y1="-12.5734" x2="-14.18" y2="-36.1434" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="4"/>
+<wire x1="12.4134" y1="-10.77" x2="12.4134" y2="-9.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R">
 <contactref element="IC2" pad="2"/>
 <contactref element="S1" pad="2"/>
 <contactref element="R1" pad="2"/>
-<wire x1="-12.24" y1="-12.5734" x2="-28.93" y2="-48.41" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.5116" y1="-4.5408" x2="-12.24" y2="-12.5734" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.5116" y1="-4.5408" x2="-28.93" y2="-48.41" width="0" layer="19" extent="1-1"/>
+<wire x1="12.4134" y1="-12.04" x2="-17.5116" y2="-4.5408" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Q">
-<contactref element="IC3" pad="2"/>
 <contactref element="IC2" pad="1"/>
-<wire x1="-13.51" y1="-12.5734" x2="-12.91" y2="-36.1434" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="5"/>
+<wire x1="12.4134" y1="-8.23" x2="12.4134" y2="-13.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="S">
-<contactref element="IC3" pad="3"/>
 <contactref element="S2" pad="2"/>
 <contactref element="R2" pad="2"/>
-<wire x1="-17.5116" y1="-55.7508" x2="-28.93" y2="-67.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-11.64" y1="-36.1434" x2="-17.5116" y2="-55.7508" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="6"/>
+<wire x1="34.5384" y1="-27.8008" x2="-28.93" y2="-67.26" width="0" layer="19" extent="1-1"/>
+<wire x1="12.4134" y1="-6.96" x2="34.5384" y2="-27.8008" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D3" pad="A"/>
@@ -5203,64 +5186,55 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="R3" pad="2"/>
 <wire x1="-27.625" y1="-43.86" x2="-28.93" y2="-70.74" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$7">
-<contactref element="IC2" pad="5"/>
-</signal>
-<signal name="N$8">
-<contactref element="IC2" pad="4"/>
-</signal>
-<signal name="N$9">
-<contactref element="IC2" pad="6"/>
-</signal>
 <signal name="N$10">
 <contactref element="U1" pad="3"/>
 <contactref element="D1" pad="A"/>
-<wire x1="-23.38" y1="-94.94" x2="-29.185" y2="-97.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.73" y1="-83.86" x2="-29.185" y2="-97.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="U1" pad="2"/>
 <contactref element="D4" pad="A"/>
-<wire x1="-25.92" y1="-94.94" x2="-29.185" y2="-102.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.27" y1="-83.86" x2="-29.185" y2="-102.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U1" pad="4"/>
 <contactref element="D5" pad="A"/>
-<wire x1="-20.84" y1="-94.94" x2="-29.185" y2="-106.51" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.19" y1="-83.86" x2="-29.185" y2="-106.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="U1" pad="7"/>
 <contactref element="D6" pad="A"/>
-<wire x1="-13.22" y1="-94.94" x2="-29.185" y2="-110.79" width="0" layer="19" extent="1-1"/>
+<wire x1="6.43" y1="-83.86" x2="-29.185" y2="-110.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="U1" pad="10"/>
 <contactref element="D7" pad="A"/>
-<wire x1="-13.22" y1="-87.32" x2="-29.185" y2="-115.07" width="0" layer="19" extent="1-1"/>
+<wire x1="6.43" y1="-76.24" x2="-29.185" y2="-115.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="U1" pad="1"/>
 <contactref element="D8" pad="A"/>
-<wire x1="-28.46" y1="-94.94" x2="-29.185" y2="-119.35" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.81" y1="-83.86" x2="-29.185" y2="-119.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="U1" pad="5"/>
 <contactref element="D9" pad="A"/>
-<wire x1="-18.3" y1="-94.94" x2="-29.185" y2="-123.63" width="0" layer="19" extent="1-1"/>
+<wire x1="1.35" y1="-83.86" x2="-29.185" y2="-123.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="U1" pad="6"/>
 <contactref element="D10" pad="A"/>
-<wire x1="-15.76" y1="-94.94" x2="-29.185" y2="-127.91" width="0" layer="19" extent="1-1"/>
+<wire x1="3.89" y1="-83.86" x2="-29.185" y2="-127.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="U1" pad="9"/>
 <contactref element="D11" pad="A"/>
-<wire x1="-10.68" y1="-87.32" x2="-29.185" y2="-132.19" width="0" layer="19" extent="1-1"/>
+<wire x1="8.97" y1="-76.24" x2="-29.185" y2="-132.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="U1" pad="11"/>
 <contactref element="D12" pad="A"/>
-<wire x1="-15.76" y1="-87.32" x2="-29.185" y2="-136.47" width="0" layer="19" extent="1-1"/>
+<wire x1="3.89" y1="-76.24" x2="-29.185" y2="-136.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="D1" pad="C"/>
@@ -5288,14 +5262,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="N$21">
 <contactref element="U1" pad="15"/>
 <contactref element="R5" pad="2"/>
-<wire x1="-25.92" y1="-87.32" x2="-28.93" y2="-145.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.27" y1="-76.24" x2="-28.93" y2="-145.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="S3" pad="2"/>
 <contactref element="R6" pad="2"/>
 <contactref element="U1" pad="14"/>
 <wire x1="-17.5116" y1="-154.6408" x2="-28.93" y2="-166.15" width="0" layer="19" extent="1-1"/>
-<wire x1="-23.38" y1="-87.32" x2="-17.5116" y2="-154.6408" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.73" y1="-76.24" x2="-17.5116" y2="-154.6408" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
