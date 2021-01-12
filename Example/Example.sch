@@ -9051,7 +9051,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </part>
 <part name="S1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="40-XX" device="-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1"/>
 <part name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="CR1220" device="SMT" package3d_urn="urn:adsk.eagle:package:6240665/1"/>
-<part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="D3" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="SUPPLY6" library="RoboJackets-Supplies" deviceset="GND" device=""/>
@@ -9123,10 +9122,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$1" gate="G$1" x="30.48" y="104.14" smashed="yes">
 <attribute name="NAME" x="29.21" y="107.315" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="99.06" size="1.778" layer="96"/>
-</instance>
-<instance part="D2" gate="A" x="243.84" y="119.38" smashed="yes">
-<attribute name="NAME" x="243.84" y="123.444" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="VALUE" x="243.84" y="116.84" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="D3" gate="A" x="162.56" y="99.06" smashed="yes">
 <attribute name="NAME" x="162.56" y="103.124" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
