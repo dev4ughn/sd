@@ -5101,6 +5101,24 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="-29.78" y="-145.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-30.415" y="-147.805" size="1.27" layer="27"/>
 </element>
+<element name="S3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="B3F-40XX-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1" value="" x="-23.76" y="-157.13" smashed="yes">
+<attribute name="NAME" x="-28.84" y="-150.145" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="-26.935" y="-162.21" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220" x="-29.78" y="-166.15" smashed="yes">
+<attribute name="NAME" x="-30.415" y="-165.515" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="77" x="-29.78" y="-166.15" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-29.78" y="-166.15" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-30.415" y="-168.055" size="1.27" layer="27"/>
+</element>
+<element name="U$4" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="-21.37" y="-176.58" smashed="yes">
+<attribute name="NAME" x="-24.926" y="-170.978" size="1.6764" layer="25" font="vector"/>
+<attribute name="VALUE" x="-25.688" y="-181.13" size="1.6764" layer="27" font="vector"/>
+</element>
+<element name="U$5" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="-21.37" y="-191.32" smashed="yes">
+<attribute name="NAME" x="-24.926" y="-185.718" size="1.6764" layer="25" font="vector"/>
+<attribute name="VALUE" x="-25.688" y="-195.87" size="1.6764" layer="27" font="vector"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -5119,8 +5137,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="U$3" pad="-"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R5" pad="1"/>
+<contactref element="R6" pad="1"/>
+<contactref element="U$4" pad="-"/>
+<contactref element="U$5" pad="-"/>
+<contactref element="U1" pad="13"/>
+<wire x1="-21.37" y1="-176.58" x2="-21.37" y2="-191.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.63" y1="-166.15" x2="-21.37" y2="-176.58" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.63" y1="-145.9" x2="-30.63" y2="-166.15" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.63" y1="-141.02" x2="-30.63" y2="-145.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.37" y1="-79.78" x2="-30.63" y2="-141.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.84" y1="-87.32" x2="-30.63" y2="-141.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.37" y1="-79.78" x2="-20.84" y2="-87.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.63" y1="-70.74" x2="-21.37" y2="-79.78" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.63" y1="-67.26" x2="-30.63" y2="-70.74" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.63" y1="-48.41" x2="-30.63" y2="-67.26" width="0" layer="19" extent="1-1"/>
@@ -5135,6 +5161,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="S2" pad="3"/>
 <contactref element="U$1" pad="+$1"/>
 <contactref element="U$3" pad="+$1"/>
+<contactref element="U$4" pad="+$1"/>
+<contactref element="U$5" pad="+$1"/>
+<wire x1="-29.57" y1="-176.58" x2="-29.57" y2="-191.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.57" y1="-79.78" x2="-29.57" y2="-176.58" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.0084" y1="-60.7292" x2="-29.57" y2="-79.78" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.18" y1="-29.9966" x2="-30.0084" y2="-60.7292" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.57" y1="-21.61" x2="-14.18" y2="-29.9966" width="0" layer="19" extent="1-1"/>
@@ -5259,6 +5289,13 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="U1" pad="15"/>
 <contactref element="R5" pad="2"/>
 <wire x1="-25.92" y1="-87.32" x2="-28.93" y2="-145.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="S3" pad="2"/>
+<contactref element="R6" pad="2"/>
+<contactref element="U1" pad="14"/>
+<wire x1="-17.5116" y1="-154.6408" x2="-28.93" y2="-166.15" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.38" y1="-87.32" x2="-17.5116" y2="-154.6408" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
