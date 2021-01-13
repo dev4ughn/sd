@@ -9399,24 +9399,24 @@ counter</text>
 <attribute name="VALUE" x="142.24" y="177.8" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="D4" gate="A" x="91.44" y="182.88" smashed="yes">
-<attribute name="NAME" x="91.44" y="186.944" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="VALUE" x="91.44" y="180.34" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<attribute name="NAME" x="95.25" y="183.642" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="VALUE" x="83.312" y="184.912" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="D6" gate="A" x="91.44" y="177.8" smashed="yes">
-<attribute name="NAME" x="91.44" y="181.864" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="VALUE" x="91.44" y="175.26" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<attribute name="NAME" x="95.504" y="178.308" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="VALUE" x="83.566" y="179.832" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="D8" gate="A" x="91.44" y="172.72" smashed="yes">
-<attribute name="NAME" x="91.44" y="176.784" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="VALUE" x="91.44" y="170.18" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<attribute name="NAME" x="96.266" y="173.228" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="VALUE" x="83.566" y="174.752" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="D10" gate="A" x="91.44" y="167.64" smashed="yes">
-<attribute name="NAME" x="91.44" y="171.704" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="VALUE" x="91.44" y="165.1" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<attribute name="NAME" x="96.52" y="168.148" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="VALUE" x="83.566" y="169.672" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="D12" gate="A" x="91.44" y="162.56" smashed="yes">
-<attribute name="NAME" x="91.44" y="166.624" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="VALUE" x="91.44" y="160.02" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<attribute name="NAME" x="96.266" y="163.068" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="VALUE" x="83.566" y="164.592" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="R4" gate="G$1" x="109.22" y="152.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="107.7214" y="148.59" size="1.778" layer="95" rot="R90"/>
@@ -9441,28 +9441,28 @@ counter</text>
 <attribute name="VALUE" x="35.56" y="132.08" size="1.778" layer="96"/>
 </instance>
 <instance part="D2" gate="G$1" x="88.9" y="185.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.472" y="181.991" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="93.472" y="187.325" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<attribute name="NAME" x="96.774" y="187.579" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="88.392" y="186.055" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
 <instance part="D13" gate="G$1" x="96.52" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="101.092" y="27.051" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="101.092" y="32.385" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
 <instance part="D14" gate="G$1" x="88.9" y="165.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.472" y="161.671" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="93.472" y="167.005" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<attribute name="NAME" x="98.044" y="167.259" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="88.138" y="165.481" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
 <instance part="D1" gate="G$1" x="88.9" y="180.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.472" y="176.911" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="93.472" y="182.245" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<attribute name="NAME" x="96.774" y="182.245" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="88.392" y="180.721" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
 <instance part="D5" gate="G$1" x="88.9" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.472" y="171.831" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="93.472" y="177.165" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<attribute name="NAME" x="97.282" y="177.419" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="88.392" y="175.641" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
 <instance part="D7" gate="G$1" x="88.9" y="170.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.472" y="166.751" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="93.472" y="172.085" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<attribute name="NAME" x="97.282" y="172.085" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="88.138" y="170.561" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
 </instances>
 <busses>
