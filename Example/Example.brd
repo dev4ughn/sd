@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -4662,6 +4662,26 @@ In this library you will find LEDs and other visual output devices.
 <wire x1="1.3" y1="0.5" x2="1.3" y2="-0.5" width="0.05" layer="39"/>
 <wire x1="1.3" y1="-0.5" x2="-1.3" y2="-0.5" width="0.05" layer="39"/>
 </package>
+<package name="LED-0603">
+<description>&lt;B&gt;LED 0603 SMT&lt;/B&gt;&lt;p&gt;
+0603, surface mount.
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.075inch &lt;/li&gt;
+&lt;li&gt;Area: 0.06" x 0.03"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;LED - BLUE&lt;/li&gt;</description>
+<wire x1="1.5875" y1="0.47625" x2="1.5875" y2="-0.47625" width="0.127" layer="21"/>
+<wire x1="0.15875" y1="0.47625" x2="0.15875" y2="0" width="0.127" layer="51"/>
+<wire x1="0.15875" y1="0" x2="0.15875" y2="-0.47625" width="0.127" layer="51"/>
+<wire x1="0.15875" y1="0" x2="-0.15875" y2="0.3175" width="0.127" layer="51"/>
+<wire x1="0.15875" y1="0" x2="-0.15875" y2="-0.3175" width="0.127" layer="51"/>
+<smd name="A" x="-0.877" y="0" dx="1" dy="1" layer="1" roundness="30" rot="R270"/>
+<smd name="C" x="0.877" y="0" dx="1" dy="1" layer="1" roundness="30" rot="R270"/>
+<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.635" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="74xx-us" urn="urn:adsk.eagle:library:88">
@@ -4990,9 +5010,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="16.72" y="36.155" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="14.815" y="48.22" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="5.26" y="-17.21" smashed="yes">
-<attribute name="NAME" x="1.704" y="-11.608" size="1.6764" layer="25" font="vector"/>
-<attribute name="VALUE" x="0.942" y="-21.76" size="1.6764" layer="27" font="vector"/>
+<element name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="8.52" y="26.05" smashed="yes" rot="MR90">
+<attribute name="NAME" x="14.122" y="22.494" size="1.6764" layer="26" font="vector" rot="MR90"/>
+<attribute name="VALUE" x="3.97" y="21.732" size="1.6764" layer="28" font="vector" rot="MR90"/>
 </element>
 <element name="D3" library="RoboJackets-LEDs" package="LED0603" value="YELLOW" x="19.68" y="28.23" smashed="yes" rot="R180">
 <attribute name="DKPN" value="160-1448-1-ND" x="19.68" y="28.23" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5005,9 +5025,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="10.98" y="31.84" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="10.345" y="29.935" size="1.27" layer="27"/>
 </element>
-<element name="S2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="B3F-40XX-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1" value="" x="11.89" y="12.33" smashed="yes">
-<attribute name="NAME" x="6.81" y="19.315" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="8.715" y="7.25" size="1.27" layer="27" ratio="10"/>
+<element name="S2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="B3F-40XX-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1" value="" x="13.06" y="12.33" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.075" y="7.25" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="18.14" y="9.155" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="" x="11.02" y="27.33" smashed="yes">
 <attribute name="NAME" x="10.385" y="27.965" size="1.27" layer="25"/>
@@ -5021,9 +5041,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="11.02" y="22.45" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="10.385" y="20.545" size="1.27" layer="27"/>
 </element>
-<element name="U$3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="6.22" y="-38.85" smashed="yes">
-<attribute name="NAME" x="2.664" y="-33.248" size="1.6764" layer="25" font="vector"/>
-<attribute name="VALUE" x="1.902" y="-43.4" size="1.6764" layer="27" font="vector"/>
+<element name="U$3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="76.47" y="25.2" smashed="yes" rot="MR270">
+<attribute name="NAME" x="70.868" y="28.756" size="1.6764" layer="26" font="vector" rot="MR270"/>
+<attribute name="VALUE" x="81.02" y="29.518" size="1.6764" layer="28" font="vector" rot="MR270"/>
 </element>
 <element name="U1" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" package="DIP16" package3d_urn="urn:adsk.eagle:package:38809/1" value="CD4017" x="45.07" y="27.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="45.07" y="17.185" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
@@ -5102,13 +5122,15 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="45.56" y="10.97" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="44.925" y="9.065" size="1.27" layer="27"/>
 </element>
-<element name="U$4" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="52.9" y="-16.45" smashed="yes">
-<attribute name="NAME" x="49.344" y="-10.848" size="1.6764" layer="25" font="vector"/>
-<attribute name="VALUE" x="48.582" y="-21" size="1.6764" layer="27" font="vector"/>
+<element name="D2" library="RoboJackets-LEDs" package="LED-0603" value="BLUE" x="-14.46" y="-47.12" smashed="yes">
+<attribute name="NAME" x="-14.46" y="-46.485" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="DIO-08575" x="-14.46" y="-47.12" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-14.46" y="-47.755" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="U$5" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CR1220-SMD" package3d_urn="urn:adsk.eagle:package:6240665/1" value="" x="52.82" y="-36.71" smashed="yes">
-<attribute name="NAME" x="49.264" y="-31.108" size="1.6764" layer="25" font="vector"/>
-<attribute name="VALUE" x="48.502" y="-41.26" size="1.6764" layer="27" font="vector"/>
+<element name="D13" library="RoboJackets-LEDs" package="LED-0603" value="GREEN" x="-14.46" y="-50.11" smashed="yes">
+<attribute name="NAME" x="-14.46" y="-49.475" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="DIO-00821" x="-14.46" y="-50.11" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-14.46" y="-50.745" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -5122,20 +5144,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="R4" pad="1"/>
 <contactref element="R5" pad="1"/>
 <contactref element="R6" pad="1"/>
-<contactref element="U$4" pad="-"/>
-<contactref element="U$5" pad="-"/>
 <contactref element="U1" pad="13"/>
-<wire x1="44.71" y1="10.97" x2="41.26" y2="26.71" width="0" layer="19" extent="1-1"/>
-<wire x1="44.69" y1="14.85" x2="44.71" y2="10.97" width="0" layer="19" extent="1-1"/>
+<wire x1="44.69" y1="14.85" x2="41.26" y2="26.71" width="0" layer="19" extent="1-1"/>
+<wire x1="44.71" y1="10.97" x2="44.69" y2="14.85" width="0" layer="19" extent="1-1"/>
 <wire x1="44.66" y1="6.76" x2="44.71" y2="10.97" width="0" layer="19" extent="1-1"/>
 <wire x1="27.0266" y1="25.22" x2="41.26" y2="26.71" width="0" layer="19" extent="1-1"/>
 <wire x1="10.17" y1="27.33" x2="27.0266" y2="25.22" width="0" layer="19" extent="1-1"/>
-<wire x1="10.17" y1="22.45" x2="10.17" y2="27.33" width="0" layer="19" extent="1-1"/>
 <wire x1="10.13" y1="31.84" x2="10.17" y2="27.33" width="0" layer="19" extent="1-1"/>
-<wire x1="52.9" y1="-16.45" x2="44.66" y2="6.76" width="0" layer="19" extent="1-1"/>
-<wire x1="52.82" y1="-36.71" x2="52.9" y2="-16.45" width="0" layer="19" extent="1-1"/>
-<wire x1="5.26" y1="-17.21" x2="10.17" y2="22.45" width="0" layer="19" extent="1-1"/>
-<wire x1="6.22" y1="-38.85" x2="5.26" y2="-17.21" width="0" layer="19" extent="1-1"/>
+<wire x1="10.17" y1="22.45" x2="10.17" y2="27.33" width="0" layer="19" extent="1-1"/>
+<wire x1="8.52" y1="26.05" x2="10.17" y2="22.45" width="0" layer="19" extent="1-16"/>
+<wire x1="76.47" y1="25.2" x2="8.52" y2="26.05" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC2" pad="14"/>
@@ -5143,14 +5161,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="S2" pad="3"/>
 <contactref element="U$1" pad="+$1"/>
 <contactref element="U$3" pad="+$1"/>
-<contactref element="U$4" pad="+$1"/>
-<contactref element="U$5" pad="+$1"/>
 <wire x1="17.8884" y1="45.6292" x2="33.1734" y2="32.84" width="0" layer="19" extent="1-1"/>
-<wire x1="5.6416" y1="9.8408" x2="33.1734" y2="32.84" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.94" y1="-17.21" x2="5.6416" y2="9.8408" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.98" y1="-38.85" x2="-2.94" y2="-17.21" width="0" layer="19" extent="1-1"/>
-<wire x1="44.7" y1="-16.45" x2="5.6416" y2="9.8408" width="0" layer="19" extent="1-1"/>
-<wire x1="44.62" y1="-36.71" x2="44.7" y2="-16.45" width="0" layer="19" extent="1-1"/>
+<wire x1="15.5492" y1="6.0816" x2="33.1734" y2="32.84" width="0" layer="19" extent="1-1"/>
+<wire x1="8.52" y1="17.85" x2="15.5492" y2="6.0816" width="0" layer="19" extent="16-16"/>
+<wire x1="76.47" y1="33.4" x2="8.52" y2="17.85" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="QNOT">
 <contactref element="IC2" pad="3"/>
@@ -5167,14 +5181,18 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="Q">
 <contactref element="IC2" pad="1"/>
 <contactref element="IC2" pad="5"/>
-<wire x1="27.0266" y1="27.76" x2="27.0266" y2="32.84" width="0" layer="19" extent="1-1"/>
+<contactref element="R6" pad="2"/>
+<contactref element="U1" pad="14"/>
+<wire x1="46.41" y1="10.97" x2="41.26" y2="24.17" width="0" layer="19" extent="1-1"/>
+<wire x1="27.0266" y1="27.76" x2="41.26" y2="24.17" width="0" layer="19" extent="1-1"/>
+<wire x1="27.0266" y1="32.84" x2="27.0266" y2="27.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="S">
 <contactref element="S2" pad="2"/>
 <contactref element="R2" pad="2"/>
 <contactref element="IC2" pad="6"/>
-<wire x1="18.1384" y1="14.8192" x2="27.0266" y2="26.49" width="0" layer="19" extent="1-1"/>
-<wire x1="11.87" y1="27.33" x2="18.1384" y2="14.8192" width="0" layer="19" extent="1-1"/>
+<wire x1="11.87" y1="27.33" x2="27.0266" y2="26.49" width="0" layer="19" extent="1-1"/>
+<wire x1="10.5708" y1="18.5784" x2="11.87" y2="27.33" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D3" pad="A"/>
@@ -5260,14 +5278,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="N$21">
 <contactref element="U1" pad="15"/>
 <contactref element="R5" pad="2"/>
-<wire x1="41.26" y1="21.63" x2="46.39" y2="14.85" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$1">
-<contactref element="S3" pad="2"/>
-<contactref element="R6" pad="2"/>
-<contactref element="U1" pad="14"/>
-<wire x1="38.1884" y1="14.3792" x2="46.41" y2="10.97" width="0" layer="19" extent="1-1"/>
-<wire x1="41.26" y1="24.17" x2="38.1884" y2="14.3792" width="0" layer="19" extent="1-1"/>
+<wire x1="46.39" y1="14.85" x2="41.26" y2="21.63" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
