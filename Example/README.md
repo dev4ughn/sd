@@ -1,20 +1,20 @@
-# 555 Timer Motor Driver
+# SR Latch & Decade Counter Game
 
 ## Overview
 
-This is a simple board to spin an external motor using a 555 timer while being  cheap ($19.94 per the [BOM](BOM.csv)). The board is designed to be manufactured using **JLCPCB** and is a regular 2 layer board with black soldermask and an ENIG finish for aesthetics.
+Using an SR latch as the clock input for a decade counter to light up LEDs. The goal is to light up all the LEDs in the fastest time possible.
 
 ## Power Input
 
-It features input power switching between 5V USB and 9V barrel jack input using the main power switch.
+Two 3.0V coin cell lithium-ion batteries.
 
-## 555 Timer
+## SR Latch
 
-The direction and rotation speed are controlled using a externally wired trimpot. The rotation frequency and duty cycle for the max and min posistion of the trimpot were calculated.
+Using two NOR gates on an IC. An LED will confirm the state of the SR latch.
 
-## Motor
+## Decade Counter
 
-The motor is low side switched using a standard N-Channel MOSFET.
+Edge-triggered component that outputs high for a new pin every clock cycle.
 
 ## Firmware
 
