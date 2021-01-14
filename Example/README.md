@@ -24,11 +24,12 @@ This board does not have any programmable components so no firmware is required.
 
 Schematic:
 
-![Board](Example_Schematic.png)
+![Board](schematic.png)
 
 Board:
 
-![Board](Example_Board.png)
+![Top View](board_top.png)
+![Bottom View](board_bottom.png)
 
 3D Render:
 
