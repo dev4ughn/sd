@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9464,6 +9464,9 @@ counter</text>
 <attribute name="NAME" x="97.282" y="172.085" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="88.138" y="170.561" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
+<instance part="IC2" gate="P" x="104.14" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="107.315" y="55.245" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9515,6 +9518,11 @@ counter</text>
 <wire x1="38.1" y1="137.16" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
 <junction x="38.1" y="142.24"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="P" pin="GND"/>
+<wire x1="114.3" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
+<label x="116.84" y="50.8" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="QNOT" class="0">
 <segment>
@@ -9526,6 +9534,9 @@ counter</text>
 <label x="119.38" y="73.66" size="1.778" layer="95" xref="yes"/>
 <pinref part="IC2" gate="B" pin="O"/>
 <wire x1="119.38" y1="73.66" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<label x="88.9" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="R" class="0">
@@ -9554,9 +9565,6 @@ counter</text>
 <pinref part="IC2" gate="A" pin="O"/>
 <wire x1="116.84" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
 <label x="119.38" y="101.6" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<label x="88.9" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -9612,6 +9620,11 @@ counter</text>
 <pinref part="U1" gate="G2" pin="P$V+"/>
 <wire x1="129.54" y1="172.72" x2="127" y2="172.72" width="0.1524" layer="91"/>
 <label x="127" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="P" pin="VCC"/>
+<wire x1="93.98" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
+<label x="91.44" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
