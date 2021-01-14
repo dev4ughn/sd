@@ -32,4 +32,4 @@ Board:
 
 3D Render:
 
-![3D Render](Example_Render.png)
+![plane](plane.png)
