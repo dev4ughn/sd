@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9292,7 +9292,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY13" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="U$3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="CR1220" device="SMT" package3d_urn="urn:adsk.eagle:package:6240665/1"/>
 <part name="SUPPLY14" library="RoboJackets-Supplies" deviceset="GND" device=""/>
-<part name="U1" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" deviceset="CD4017" device="" package3d_urn="urn:adsk.eagle:package:38809/1" value="CD4017"/>
+<part name="U1" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" deviceset="CD4017" device="" package3d_urn="urn:adsk.eagle:package:38809/1" override_package3d_urn="urn:adsk.eagle:package:26067775/2" override_package_urn="urn:adsk.eagle:footprint:38791/1" value="CD4017"/>
 <part name="D4" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="D6" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="D8" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
@@ -9795,6 +9795,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
